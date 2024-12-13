@@ -4,7 +4,7 @@ import './App.css';
 import HorizontalNavbar from './Navbar/HorizontalNavbar';
 import Home from './Components/Home';
 import About from './Components/About';
-// import Skills from './Components/Skills';
+import Skills from './Components/Skills';
 import Project from './Components/Project';
 import Contact from './Components/Contact';
 import SideNavbar from './Navbar/SideNavbar'
@@ -16,19 +16,19 @@ function App() {
         <HorizontalNavbar />
         <SideNavbar />
         <div style={{ marginTop: '70px' }}>
-          <div id="home">
+          <div id="#home">
             <Home />
           </div>
-          <div id="about">
+          <div id="#about">
             <About />
           </div>
-          {/* <div id="skills">
+          <div id="#skills">
             <Skills />
-          </div> */}
-          <div id="projects">
+          </div>
+          <div id="#projects">
             <Project />
           </div>
-          <div id="contact">
+          <div id="#contact">
             <Contact />
           </div>
         </div>

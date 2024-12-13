@@ -4,8 +4,8 @@
     align-items: center;
     padding: 10px;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.2); 
-    background-image: url(https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1724457600&semt=ais_hybrid);
+    /* background-color: rgba(179, 5, 5, 0.2);  */
+    background-image: url(https://media.tenor.com/WkuQC7dwNa8AAAAM/space-wallpaper-stars-background.gif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +14,6 @@
     overflow: hidden;
     font-optical-sizing: auto;
     font-style: normal;
-
 }
     
     .home::before {
@@ -26,7 +25,7 @@
         bottom: 0;
         backdrop-filter: blur(10px); 
         -webkit-backdrop-filter: blur(10px);
-        background-color: rgba(255, 255, 255, 0.2); 
+        /* background-color: rgba(255, 255, 255, 0.2);  */
         border-radius: 15px;
         z-index: 0;
     }    
@@ -35,41 +34,58 @@
     align-items: center;
     justify-content: space-between;
     z-index: 1;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
     }
     
     .profile-container h3,
     .profile-container h2, 
     .profile-container h4{
         opacity: 0;
-    animation: fadeIn 1s forwards;
+    animation: fadeIn 3s forwards;
     color: aliceblue;
-    margin-left: 200px;
-    margin-top: 0;  
-    margin-bottom: 0; 
+    /* margin-left: 20px; */
+    /* margin-top: 0;  
+    margin-bottom: 0;  */
+    align-items: center;
+    text-align: center;
     }
     
     .profile-container h3 {
         animation-delay: 0.5s; 
-        font-size: 50px;
-        color: #e209ff;
+        font-size: 20px;
+        color: #ffffff;
         margin-bottom: 10px;
         font-weight: 520;
        
     }
     
     .profile-container h2 {
-        animation-delay: 1s;
-    font-size: 60px;
-    font-weight: 400;
-    margin-bottom: 20px;
+        animation-delay: 2s; 
+        font-size: 80px;
+        width: 100%;
+        font-weight: bold;
+        color: #ffffff; 
+        background-image: linear-gradient(
+            to right,
+            #666466,
+            #8d8d8d,
+            #777777,
+            #646180,
+            #6767e2,
+            #e752e0,
+            #c77dff
+        );
+       border-radius: 0px 50px;
+       width: 50%;
+       margin-left: 25%;
     }
+    
 
     .profile-container h4 {
         animation-delay: 1.5s;
     font-size: 29px;
     font-weight: 300;
-    color: rgb(245, 245, 245);
+    color: rgb(71, 2, 85);
     margin-bottom: 80px;
     }   
 
@@ -87,29 +103,53 @@
 
 }  
 .home .media{
-    margin-left: 16.5%;
+    margin-left: 0%;
+    height: 10%;
+    width: 20%;
+    background-color: #7e7e7e;
+    backdrop-filter: blur(10px); 
+        -webkit-backdrop-filter: blur(10px);
+         background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 20px;
+    margin-left: 40px;
+    border: 2px solid  #e209ff;
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+    animation-delay: 6s;
 }
 .home .personal-links{
     height: 10%;
-    width: 4%;
+    width: 15%;
     border-radius: 10px;
-    margin-left: 2%;
+    margin-left: 3%;
+    margin-top: 10%;
     filter:brightness(100%);
     margin-bottom: 30px;
-    
+    padding: 1px;
 }
 .home .personal-links:hover{
     filter: hue-rotate(90deg);
 }
+.home .resume-download{
+    /* margin-top: 290px;
+    margin-right: 40px; */
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+    animation-delay: 5s; 
+}
 .resume-download .download-button {
-    background-color: #0044ff;
+    background-color: #db15e2;
+    animation-delay: 5s; 
     color: white;
     padding: 15px 25px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px 0px;
     margin-top: 20px;
     display: inline-block;
-    margin-left: 22px;
+    /* margin-left: 22px; */
+    align-items: center;
     font-size: 16px;
     transition: background-color 0.3s;
     font-size: 20px;
@@ -203,5 +243,61 @@
         margin-left: 10%;
     }
 }
+.cursor {
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: linear-gradient(
+        to right,
+        #dc00f0,
+        #00e9e9,
+        #ff00dd,
+        #022724,
+        #0000ff,
+        #e922df,
+        #8f00ff
+      ); 
+      background-size: 200%;
+      background-clip: text;
+      -webkit-background-clip: text; 
+      color: transparent; 
+      animation: color-change 10s infinite linear; 
+    
+}
+
+@keyframes color-change {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 3s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 50%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+
+
 
 

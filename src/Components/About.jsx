@@ -1,6 +1,7 @@
 import React from 'react'
 import './About.css'
-import Image from '../Components/image.jpg'
+// import Image from '../Components/My_Profile.jpg'
+import Image from '../assets/Pro.jpg';
 function About() {
   return (
     <>
