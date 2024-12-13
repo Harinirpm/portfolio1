@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.css';
 import Profile from "../assets/Pro.jpg";
-import Resume from "../Components/Harini_M_Resume.pdf";
+import Resume from "../Components/Harini-AD-resume.pdf";
 import { Link } from 'react-router-dom';
 function Home() {
   return (
@@ -14,7 +14,7 @@ function Home() {
         {/* <h4 className="cursor typewriter-animation">Artificial Intelligence and Data Science Student!</h4> */}
         <h1 className="cursor typewriter-animation">Artificial Intelligence and Data Science Student!</h1>
      <div className='resume-download'>
-      <a href={Resume} download={"Harini_M_Resume.pdf"} className='download-button'>Download Resume</a>
+      <a href='https://harinimurali-resume.tiiny.site/' target="_blank" rel="noopener noreferrer" className='download-button'>Download Resume</a>
      </div>
 
         <div className='media'>
