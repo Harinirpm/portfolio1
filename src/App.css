@@ -1,7 +1,9 @@
 body{
-  background-color: rgb(4, 23, 77);
-  padding: 10px;
+  background: linear-gradient(to right, #04174d, rgb(7, 1, 7));
+  padding:0;
+  margin: 0;
   height: 200vh;
   scroll-behavior: smooth;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins';
+
 }

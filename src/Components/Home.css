@@ -1,5 +1,6 @@
 .home {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -43,13 +44,12 @@
         opacity: 0;
     animation: fadeIn 3s forwards;
     color: aliceblue;
-    /* margin-left: 20px; */
-    /* margin-top: 0;  
-    margin-bottom: 0;  */
     align-items: center;
     text-align: center;
     }
-    
+    .home h1{
+        margin-bottom: 50px;
+    }
     .profile-container h3 {
         animation-delay: 0.5s; 
         font-size: 20px;
@@ -63,9 +63,10 @@
         animation-delay: 2s; 
         font-size: 80px;
         width: 100%;
+        margin-bottom: 50px;
         font-weight: bold;
         color: #ffffff; 
-        background-image: linear-gradient(
+        /* background-image: linear-gradient(
             to right,
             #666466,
             #8d8d8d,
@@ -74,8 +75,8 @@
             #6767e2,
             #e752e0,
             #c77dff
-        );
-       border-radius: 0px 50px;
+        ); */
+       /* border-radius: 0px 50px; */
        width: 50%;
        margin-left: 25%;
     }
@@ -207,6 +208,20 @@
     }
     
 }
+.typewriter-animation {
+    animation: 
+      typewriter 5s steps(100) 3s 1 normal both, 
+      blinkingCursor 500ms steps(100) infinite normal;
+  }
+  @keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  @keyframes blinkingCursor{
+    from { border-right-color: rgba(255,255,255,.75); }
+    to { border-right-color: transparent; }
+  }
+  
 
 @media (max-width: 480px) {
     .profile-container h3 {
@@ -268,7 +283,6 @@
       -webkit-background-clip: text; 
       color: transparent; 
       animation: color-change 10s infinite linear; 
-    
 }
 
 @keyframes color-change {
@@ -286,17 +300,18 @@
 
 .typewriter-animation {
   animation: 
-    typewriter 5s steps(50) 3s 1 normal both, 
-    blinkingCursor 500ms steps(50) infinite normal;
+    typewriter 5s steps(100) 3s 1 normal both, 
+    blinkingCursor 500ms steps(100) infinite normal;
 }
 @keyframes typewriter {
   from { width: 0; }
-  to { width: 50%; }
+  to { width: 100%; }
 }
 @keyframes blinkingCursor{
   from { border-right-color: rgba(255,255,255,.75); }
   to { border-right-color: transparent; }
 }
+
 
 
 
