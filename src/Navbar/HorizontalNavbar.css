@@ -1,14 +1,14 @@
 .topNav{
     padding: 10px 20px;
     width:100%;
-    margin-left: -60px;
-    background: rgba(255, 255, 255, 0.1);
+    margin-left: 0px;
+    background: rgba(0, 5, 75, 0.1);
     position: fixed;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
+    z-index: 500;
     backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
@@ -17,21 +17,32 @@
    margin-left: 3%;
    color: aliceblue;
    font-size: 40px;
-   font-weight: 400;
+   font-weight: 500;
+   margin-right: 30%;
 }
 .topNav .navLinks{
     display: flex;
-    gap: 70px;
-    margin-left: auto;
-    position: relative;
-
+    gap: 50px;
+    justify-content: center;
+    margin-right: auto;
+    /* position: relative; */
+    
 }
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 .topNav .navLinks .link{
   
-    color: #fff;
+    color: #000000;
     text-decoration: none;
-    font-size: 1.6em;
-    font-weight: bold;
+    font-size: 1.3em;
+    font-weight: 500;
     transition: color 0.3s ease;
     padding: 20px 10px;
     position: relative;
@@ -39,7 +50,7 @@
 }
 .topNav .navLinks 
 .link:hover {
-  color: #df2db2;
+  color: #000000;
   cursor: pointer;
 }
 .link::after{
@@ -50,7 +61,7 @@
     bottom: 8px;
     width: 0;
     height: 2px;
-    background-color: #df2db2;
+    background-color: #000000;
     transition: width 0.3s ease;
 }
 .link:hover::after {
@@ -63,13 +74,13 @@
   font-weight: bold;
   background-image: linear-gradient(
     to right,
-    #dc00f0,
+    #141414,
     #00e9e9,
-    #ff00dd,
+    #000000,
     #00ffea,
-    #0000ff,
-    #e922df,
-    #8f00ff
+    #000000,
+    #000000,
+    #000000
   ); 
   background-size: 200%;
   background-clip: text;
@@ -86,5 +97,25 @@
         margin-left: 90px;
         font-size: 40px;
         font-weight: 400;
+    }
+  }
+  @media (max-width: 768px) {
+    .navLinks {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #444;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  
+    .navLinks.open {
+      display: flex;
+    }
+  
+    .menuToggle {
+      display: block;
     }
   }

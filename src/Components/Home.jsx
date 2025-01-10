@@ -1,19 +1,54 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Home.css';
+// import MyImage from '../Components/My_Profile.jpeg';
+import Image1 from '../assets/image1.png';
+import Image2 from '../assets/image2.png';
+import Image3 from '../assets/image3.png';
+import Image4 from '../assets/image4.png';
+import Image5 from '../assets/image5.png';
+import Hi from '../assets/hi.png';
+import Download from '../assets/download.png';
+import Codechef from '../assets/codechef.png';
 function Home() {
+
+  const images =[Image1,Image2,Image5,Image3,Image4];
+  const[currentImage, setCurrentImage] = useState(0);
+  useEffect(()=>{
+    const interval = setInterval(()=>{
+      setCurrentImage((prevIndex)=>(prevIndex+1)%images.length);
+    },2000);
+    return () =>  clearInterval(interval);
+  },[images.length]);
+
   return (
     <>
     <div className='home'>
     <div className='home-left-content'>
       <div className='profile-container'>
         <div className='text'>
-        <h3>Welcome to my Portfolio!</h3>
-        <h2>Hi, I'm Harini M</h2>
-        {/* <h4 className="cursor typewriter-animation">Artificial Intelligence and Data Science Student!</h4> */}
-        <h1 className="cursor typewriter-animation">Artificial Intelligence and Data Science Student!</h1>
+        {/* <h3>Welcome to my Portfolio!</h3> */}
+        <h2>Hi 
+          I'm Harini M <img src={Hi}
+          alt='hii'
+          style={{
+            height:"50px",
+            width:"50px",
+          }}
+          /></h2>
+        <h1 className="cursor typewriter-animation">Artificial Intelligence and Data Science !!!</h1>
      <div className='resume-download'>
-      <a href='https://harinimurali-resume.tiiny.site/' target="_blank" rel="noopener noreferrer" className='download-button'>Download Resume</a>
-     </div>
+      <a href='https://harinimurali-resume.tiiny.site/' target="_blank" rel="noopener noreferrer" className='download-button'>Resume <img src={Download}
+          alt='hii'
+          style={{
+            height:"25px",
+            width:"25px",
+            marginTop:"-5px",
+            justifyContent:"center",
+            marginLeft:"10px",
+          }}
+          /></a>
+      </div>
+     
 
         <div className='media'>
         <a href='https://www.linkedin.com/in/harini-murali-bitsathy/' target="_blank" rel="noopener noreferrer">
@@ -32,13 +67,19 @@ function Home() {
      <a href='https://www.hackerrank.com/profile/harinirangammal4' target="_blank" rel="noopener noreferrer">
   <img src='https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/160_Hackerrank_logo_logos-512.png' alt='HackerRank' className='personal-links'/>
 </a>
+<a href='https://www.codechef.com/users/harini38' target="_blank" rel="noopener noreferrer">
+  <img src={Codechef} alt='HackerRank' className='personal-links'/>
+</a>
     </div>
     </div>
-      {/* <img src={Profile} alt='myprofile' className='home-profile' /> */}
       </div>
 </div>
 <div className='home-right-content'>
-  <h1>hello</h1>
+  <img 
+  src={images[currentImage]} 
+  alt='profile' 
+  className='profile'
+  />
 </div>
     </div>
     

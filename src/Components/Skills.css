@@ -4,36 +4,35 @@
   color: white;
   padding: 20px;
   overflow: hidden;
+  background: linear-gradient(to right, #d4e0ff, #ffffff);
 }
 
 .skills  h1{
-  font-size: 40px;
+  font-size: 2.20rem;
   font-weight: 400;
   display: inline-block;
   z-index: 2;
-  
+  animation: slide-in 2s ease-out, glow 3s ease-in-out infinite alternate;
+  color: black;
+ 
 }
 .skills h1::after{
   content: " ";
   display: block;
-  background-color: #f504e1;
-  height: 5px;
-  width: 100px;
+  background-color: #0c0470;
+  height: 4px;
+  width: 160px;
+  margin-top: 1.2rem;
 }
 
 .skills .languages {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden; 
 }
 
 .skills .icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
   gap: 60px; 
   padding: 10px;
-  max-width: 800px; 
+  max-width: 1500px; 
   margin: 0 auto; 
   z-index: 2;
 }
@@ -44,13 +43,16 @@
   align-items: center;
   padding: 30px;
   width: 15%; 
-  height: 110%; 
+  height: 10%; 
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 25, 107, 0.1);
   transition: transform 0.3s ease; 
-  border: 2px solid rgb(233, 9, 214);
+  border: 2px solid rgb(0, 21, 139);
   z-index: 2;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  overflow: hidden; 
 }
 
 .skills .tools:hover {
@@ -63,7 +65,35 @@
   object-fit: contain; 
   border-radius: 10px;
 }
+.moving-right{
+display: flex;
+gap: 60px; 
+  animation: move-left 20s linear infinite; 
+  overflow: hidden; 
 
+}
+.moving-left{
+  display: flex;
+  animation: move-right 20s linear infinite; 
+  overflow: hidden; 
+  }
+  @keyframes move-left {
+    0% {
+      transform: translateX(100%); 
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
+  }
+  
+  @keyframes move-right {
+    0% {
+      transform: translateX(-100%); 
+    }
+    100% {
+      transform: translateX(100%); 
+    }
+  }
 @media (max-width: 768px) {
   .skills .icons {
     gap: 15px; 

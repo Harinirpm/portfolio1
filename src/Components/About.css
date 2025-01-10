@@ -1,7 +1,7 @@
 .about {
   padding: 20px;
   font-family: 'Poppins';
-  background: linear-gradient(to right, #04174d, rgb(139, 65, 139));
+  background: linear-gradient(to right, #d4e0ff, #679ff3);
 }
 .about h1 {
   color: aliceblue;
@@ -9,6 +9,32 @@
   margin: 20px 0; 
   font-size: 40px;
   font-weight: 500;
+}
+.about h1 {
+  font-size: 2.20rem;
+  color: #000;
+  margin-bottom: 2rem;
+  animation: slide-in 2s ease-out, glow 3s ease-in-out infinite alternate;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #4a90e2, 0 0 20px #4a90e2, 0 0 30px #4a90e2;
+  }
+  to {
+    text-shadow: 0 0 20px #0047ab, 0 0 40px #0047ab, 0 0 60px #0047ab;
+  }
 }
 .about p{
   width: 80%;
@@ -19,7 +45,7 @@
   height: auto;
   width: 20%;
   padding: 10px;
-  border: 5px solid #e209ff;
+  border: 5px solid #140236;
   margin: 20px auto; 
   display: flex;
   flex-direction: row;
@@ -34,7 +60,7 @@
 
 .underline {
   height: 4px;
-  background-color: #f104e6;
+  background-color: #050231;
 }
 
 .first-line {
@@ -82,7 +108,7 @@
   font-size: 25px;
   font-weight: 200;
   line-height: 1.6;
-  color: aliceblue;
+  color: rgb(3, 41, 75);
   margin: 20px; 
   text-align: justify;
 }
