@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import './Home.css';
-// import MyImage from '../Components/My_Profile.jpeg';
 import Image1 from '../assets/image1.png';
 import Image2 from '../assets/image2.png';
 import Image3 from '../assets/image3.png';

@@ -11,6 +11,7 @@
     z-index: 500;
     backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  font-family: 'Poppins';
 
 }
 .topNav h1{

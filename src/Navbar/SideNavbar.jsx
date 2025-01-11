@@ -12,21 +12,21 @@ function SideNavbar() {
 
   return (
     <div className="side-nav">
-      {/* Menu Icon (Visible in Mobile View) */}
+      
       <div
         className={`menu-icon ${isOpen ? 'hidden' : ''}`}
         onClick={toggleNavbar}
         aria-expanded={isOpen}
         aria-controls="sidebar"
       >
-        <IoMdMenu style={{ color: 'white' }} size={30} />
+        <IoMdMenu style={{ color: 'black',display:"flex",marginTop:"20px" }} size={40} />
       </div>
 
-      {/* Sidebar */}
+     
       <div id="sidebar" className={`sidebar ${isOpen ? 'open' : ''}`}>
-        {/* Close Icon */}
+      
         <span className="close-btn" onClick={toggleNavbar}>
-          <IoMdClose style={{ color: 'white' }} size={36} />
+          <IoMdClose style={{ color: 'white',marginLeft:"20px",justifyContent:"flex-end" }} size={36} />
         </span>
         <ul>
           <li>
