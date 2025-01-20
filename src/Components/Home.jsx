@@ -36,7 +36,7 @@ function Home() {
           /></h2>
         <h1 className="cursor typewriter-animation">Artificial Intelligence and Data Science Student!</h1>
      <div className='resume-download'>
-      <a href='https://harinimurali-resume.tiiny.site/' target="_blank" rel="noopener noreferrer" className='download-button'>Resume <img src={Download}
+      <a href='https://harini-murali-resume.tiiny.site/' target="_blank" rel="noopener noreferrer" className='download-button'>Resume <img src={Download}
           alt='hii'
           style={{
             height:"25px",
